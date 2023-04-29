@@ -1,5 +1,5 @@
 # Multi-brand Design Tokens library
 
-Powered by Style Dictionary.
-## Multi-brand
-https://github.com/amzn/style-dictionary/tree/main/examples/advanced/multi-brand-multi-platform/tokens/globals/color
+A proof-of-concept Design Tokens library, inspired by a group of Australian banks.
+
+Powered by [Style Dictionary](https://github.com/amzn/style-dictionary).
