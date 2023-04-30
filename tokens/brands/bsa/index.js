@@ -21,14 +21,10 @@ const palette = {
   system: { value: "#FF0", private: true },
 };
 
-
 module.exports = {
   brand: {
     name: "BankSA",
     code: "BSA",
   },
-  palette: {
-    ...palette,
-    tints,
-  },
+  palette,
 };

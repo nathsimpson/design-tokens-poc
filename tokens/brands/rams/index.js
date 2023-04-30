@@ -21,10 +21,6 @@ const palette = {
   system: { value: "#FF0", private: true },
 };
 
-
 module.exports = {
-  palette: {
-    ...palette,
-    tints,
-  },
+  palette,
 };

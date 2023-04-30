@@ -12,6 +12,15 @@ module.exports = {
     button: {
       background: { value: "{palette.primary.value}" },
       text: { value: "{palette.white.value}" },
+      border: { value: "{palette.primary.value}" },
+      icon: { value: "{palette.white.value}" },
+      hover: {},
+      active: {},
+      disabled: {},
     },
+    warning: {},
+    danger: {},
+    info: {},
+    primary: {},
   },
 };

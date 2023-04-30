@@ -17,6 +17,8 @@ const palette = {
   warning: { value: "#C53B00", private: true },
   danger: { value: "#C40000", private: true },
   system: { value: "#FF0", private: true },
+  // added tokens
+  white: { value: "#FFFFFF", private: true },
 };
 
 module.exports = {
