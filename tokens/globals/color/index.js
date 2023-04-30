@@ -1,20 +1,17 @@
 module.exports = {
   color: {
-    border: { value: "{palette.border.value}" },
-    borderDark: { value: "{palette.borderDark.value}" },
-    focus: { value: "{palette.focus.value}" },
-    heading: { value: "{palette.heading.value}" },
-    hero: { value: "{palette.hero.value}" },
-    light: { value: "{palette.light.value}" },
-    link: { value: "{palette.link.value}" },
-    muted: { value: "{palette.muted.value}" },
-    neutral: { value: "{palette.neutral.value}" },
-    pop: { value: "{palette.pop.value}" },
-    primary: { value: "{palette.primary.value}" },
-    text: { value: "{palette.text.value}" },
-    info: { value: "{palette.info.value}" },
-    warning: { value: "{palette.warning.value}" },
-    danger: { value: "{palette.danger.value}" },
-    system: { value: "{palette.system.value}" },
+    ungrouped: {
+      light: { value: "{palette.light.value}" },
+      neutral: { value: "{palette.neutral.value}" },
+      info: { value: "{palette.info.value}" },
+      inverse: { value: "{palette.white.value}" },
+      warning: { value: "{palette.warning.value}" },
+      pop: { value: "{palette.pop.value}" },
+      system: { value: "{palette.system.value}" },
+    },
+    button: {
+      background: { value: "{palette.primary.value}" },
+      text: { value: "{palette.white.value}" },
+    },
   },
 };

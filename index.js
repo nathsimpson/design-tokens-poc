@@ -1,7 +1,7 @@
 const StyleDictionary = require("style-dictionary");
 
 // should match dir names in tokens/brands
-const brands = ["wpc", "stg"];
+const brands = ["wbc", "stg", "bom", "bsa", "rams"];
 
 console.log("Build started...");
 

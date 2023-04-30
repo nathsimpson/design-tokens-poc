@@ -2,18 +2,16 @@ module.exports = {
   color: {
     background: {
       default: {
+        value: "{palette.white.value}",
+      },
+      alternate: {
         value: "{palette.background.value}",
       },
-      //   alternate: {
-      //     value: "{palette.white.value}",
-      //   },
-      //   surface: {
-      //     value: "{palette.white.value}",
-      //   },
-      //   muted: {
-      //     value: "{palette.grayLight.value}",
-      //   },
-      //   brand: { value: "{palette.brandbg.value}" },
+      hero: { value: "{palette.hero.value}" },
+      infoBold: { value: "{palette.info.value}" },
+      warningBold: { value: "{palette.warning.value}" },
+      brand: { value: "{palette.primary.value}" },
+      pop: { value: "{palette.pop.value}" },
     },
   },
 };
