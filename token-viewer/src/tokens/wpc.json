@@ -1,0 +1,667 @@
+{
+  "color": {
+    "accent": {
+      "info": {
+        "value": "#0074C4",
+        "filePath": "tokens/globals/color/accent.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.info.value}"
+        },
+        "name": "ColorAccentInfo",
+        "attributes": {
+          "category": "color",
+          "type": "accent",
+          "item": "info"
+        },
+        "path": [
+          "color",
+          "accent",
+          "info"
+        ]
+      },
+      "warning": {
+        "value": "#C53B00",
+        "filePath": "tokens/globals/color/accent.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.warning.value}"
+        },
+        "name": "ColorAccentWarning",
+        "attributes": {
+          "category": "color",
+          "type": "accent",
+          "item": "warning"
+        },
+        "path": [
+          "color",
+          "accent",
+          "warning"
+        ]
+      },
+      "pop": {
+        "value": "#FF3DDB",
+        "filePath": "tokens/globals/color/accent.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.pop.value}"
+        },
+        "name": "ColorAccentPop",
+        "attributes": {
+          "category": "color",
+          "type": "accent",
+          "item": "pop"
+        },
+        "path": [
+          "color",
+          "accent",
+          "pop"
+        ]
+      },
+      "system": {
+        "value": "#FF0",
+        "filePath": "tokens/globals/color/accent.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.system.value}"
+        },
+        "name": "ColorAccentSystem",
+        "attributes": {
+          "category": "color",
+          "type": "accent",
+          "item": "system"
+        },
+        "path": [
+          "color",
+          "accent",
+          "system"
+        ]
+      }
+    },
+    "background": {
+      "default": {
+        "value": "#F3F4F6",
+        "filePath": "tokens/globals/color/background.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.background.value}"
+        },
+        "name": "ColorBackgroundDefault",
+        "attributes": {
+          "category": "color",
+          "type": "background",
+          "item": "default"
+        },
+        "path": [
+          "color",
+          "background",
+          "default"
+        ]
+      },
+      "hero": {
+        "value": "#1F1C4F",
+        "filePath": "tokens/globals/color/background.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.hero.value}"
+        },
+        "name": "ColorBackgroundHero",
+        "attributes": {
+          "category": "color",
+          "type": "background",
+          "item": "hero"
+        },
+        "path": [
+          "color",
+          "background",
+          "hero"
+        ]
+      }
+    },
+    "border": {
+      "default": {
+        "value": "#DEDEE1",
+        "filePath": "tokens/globals/color/border.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.border.value}"
+        },
+        "name": "ColorBorderDefault",
+        "attributes": {
+          "category": "color",
+          "type": "border",
+          "item": "default"
+        },
+        "path": [
+          "color",
+          "border",
+          "default"
+        ]
+      },
+      "borderDark": {
+        "value": "#9390A2",
+        "filePath": "tokens/globals/color/border.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.borderDark.value}"
+        },
+        "name": "ColorBorderBorderDark",
+        "attributes": {
+          "category": "color",
+          "type": "border",
+          "item": "borderDark"
+        },
+        "path": [
+          "color",
+          "border",
+          "borderDark"
+        ]
+      },
+      "focus": {
+        "value": "#B978D9",
+        "filePath": "tokens/globals/color/border.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.focus.value}"
+        },
+        "name": "ColorBorderFocus",
+        "attributes": {
+          "category": "color",
+          "type": "border",
+          "item": "focus"
+        },
+        "path": [
+          "color",
+          "border",
+          "focus"
+        ]
+      }
+    },
+    "ungrouped": {
+      "light": {
+        "value": "#F9F9FB",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.light.value}"
+        },
+        "name": "ColorUngroupedLight",
+        "attributes": {
+          "category": "color",
+          "type": "ungrouped",
+          "item": "light"
+        },
+        "path": [
+          "color",
+          "ungrouped",
+          "light"
+        ]
+      },
+      "neutral": {
+        "value": "#2A2E42",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.neutral.value}"
+        },
+        "name": "ColorUngroupedNeutral",
+        "attributes": {
+          "category": "color",
+          "type": "ungrouped",
+          "item": "neutral"
+        },
+        "path": [
+          "color",
+          "ungrouped",
+          "neutral"
+        ]
+      }
+    },
+    "button": {
+      "background": {
+        "value": "#DA1710",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.primary.value}"
+        },
+        "name": "ColorButtonBackground",
+        "attributes": {
+          "category": "color",
+          "type": "button",
+          "item": "background"
+        },
+        "path": [
+          "color",
+          "button",
+          "background"
+        ]
+      },
+      "text": {
+        "value": "#FFFFFF",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.white.value}"
+        },
+        "name": "ColorButtonText",
+        "attributes": {
+          "category": "color",
+          "type": "button",
+          "item": "text"
+        },
+        "path": [
+          "color",
+          "button",
+          "text"
+        ]
+      }
+    },
+    "text": {
+      "default": {
+        "value": "#181B25",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.text.value}"
+        },
+        "name": "ColorTextDefault",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "default"
+        },
+        "path": [
+          "color",
+          "text",
+          "default"
+        ]
+      },
+      "muted": {
+        "value": "#595767",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.muted.value}"
+        },
+        "name": "ColorTextMuted",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "muted"
+        },
+        "path": [
+          "color",
+          "text",
+          "muted"
+        ]
+      },
+      "heading": {
+        "value": "#1F1C4F",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.heading.value}"
+        },
+        "name": "ColorTextHeading",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "heading"
+        },
+        "path": [
+          "color",
+          "text",
+          "heading"
+        ]
+      },
+      "link": {
+        "value": "#DA1710",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.link.value}"
+        },
+        "name": "ColorTextLink",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "link"
+        },
+        "path": [
+          "color",
+          "text",
+          "link"
+        ]
+      },
+      "success": {
+        "value": "#008000",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.success.value}"
+        },
+        "name": "ColorTextSuccess",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "success"
+        },
+        "path": [
+          "color",
+          "text",
+          "success"
+        ]
+      },
+      "error": {
+        "value": "#C40000",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.danger.value}"
+        },
+        "name": "ColorTextError",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "error"
+        },
+        "path": [
+          "color",
+          "text",
+          "error"
+        ]
+      },
+      "information": {
+        "value": "#0074C4",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.info.value}"
+        },
+        "name": "ColorTextInformation",
+        "attributes": {
+          "category": "color",
+          "type": "text",
+          "item": "information"
+        },
+        "path": [
+          "color",
+          "text",
+          "information"
+        ]
+      }
+    }
+  },
+  "size": {
+    "border": {
+      "width": {
+        "base": {
+          "value": "0.125rem",
+          "filePath": "tokens/globals/size/border.js",
+          "isSource": false,
+          "original": {
+            "value": 0.125
+          },
+          "name": "SizeBorderWidthBase",
+          "attributes": {
+            "category": "size",
+            "type": "border",
+            "item": "width",
+            "subitem": "base"
+          },
+          "path": [
+            "size",
+            "border",
+            "width",
+            "base"
+          ]
+        }
+      },
+      "radius": {
+        "base": {
+          "value": "0.25rem",
+          "filePath": "tokens/globals/size/border.js",
+          "isSource": false,
+          "original": {
+            "value": 0.25
+          },
+          "name": "SizeBorderRadiusBase",
+          "attributes": {
+            "category": "size",
+            "type": "border",
+            "item": "radius",
+            "subitem": "base"
+          },
+          "path": [
+            "size",
+            "border",
+            "radius",
+            "base"
+          ]
+        }
+      }
+    },
+    "font": {
+      "small": {
+        "value": "0.75rem",
+        "comment": "the small size of the font",
+        "filePath": "tokens/globals/size/font.js",
+        "isSource": false,
+        "original": {
+          "value": "0.75",
+          "comment": "the small size of the font"
+        },
+        "name": "SizeFontSmall",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "small"
+        },
+        "path": [
+          "size",
+          "font",
+          "small"
+        ]
+      },
+      "medium": {
+        "value": "1rem",
+        "comment": "the medium size of the font",
+        "filePath": "tokens/globals/size/font.js",
+        "isSource": false,
+        "original": {
+          "value": "1",
+          "comment": "the medium size of the font"
+        },
+        "name": "SizeFontMedium",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "medium"
+        },
+        "path": [
+          "size",
+          "font",
+          "medium"
+        ]
+      },
+      "large": {
+        "value": "2rem",
+        "comment": "the large size of the font",
+        "filePath": "tokens/globals/size/font.js",
+        "isSource": false,
+        "original": {
+          "value": "2",
+          "comment": "the large size of the font"
+        },
+        "name": "SizeFontLarge",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "large"
+        },
+        "path": [
+          "size",
+          "font",
+          "large"
+        ]
+      },
+      "base": {
+        "value": "1rem",
+        "comment": "the base size of the font",
+        "filePath": "tokens/globals/size/font.js",
+        "isSource": false,
+        "original": {
+          "value": "{size.font.medium.value}",
+          "comment": "the base size of the font"
+        },
+        "name": "SizeFontBase",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "base"
+        },
+        "path": [
+          "size",
+          "font",
+          "base"
+        ]
+      }
+    },
+    "padding": {
+      "1": {
+        "value": "0.5rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": 0.5
+        },
+        "name": "SizePadding1",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "1"
+        },
+        "path": [
+          "size",
+          "padding",
+          "1"
+        ]
+      },
+      "2": {
+        "value": "1rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": 1
+        },
+        "name": "SizePadding2",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "2"
+        },
+        "path": [
+          "size",
+          "padding",
+          "2"
+        ]
+      },
+      "3": {
+        "value": "2rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": 2
+        },
+        "name": "SizePadding3",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "3"
+        },
+        "path": [
+          "size",
+          "padding",
+          "3"
+        ]
+      },
+      "4": {
+        "value": "3.5rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": 3.5
+        },
+        "name": "SizePadding4",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "4"
+        },
+        "path": [
+          "size",
+          "padding",
+          "4"
+        ]
+      },
+      "5": {
+        "value": "5rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": 5
+        },
+        "name": "SizePadding5",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "5"
+        },
+        "path": [
+          "size",
+          "padding",
+          "5"
+        ]
+      },
+      "base": {
+        "value": "0.5rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": "{size.padding.1.value}"
+        },
+        "name": "SizePaddingBase",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "base"
+        },
+        "path": [
+          "size",
+          "padding",
+          "base"
+        ]
+      },
+      "large": {
+        "value": "1rem",
+        "filePath": "tokens/globals/size/padding.js",
+        "isSource": false,
+        "original": {
+          "value": "{size.padding.2.value}"
+        },
+        "name": "SizePaddingLarge",
+        "attributes": {
+          "category": "size",
+          "type": "padding",
+          "item": "large"
+        },
+        "path": [
+          "size",
+          "padding",
+          "large"
+        ]
+      }
+    }
+  }
+}
