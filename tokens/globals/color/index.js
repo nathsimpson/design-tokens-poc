@@ -22,5 +22,10 @@ module.exports = {
     danger: {},
     info: {},
     primary: {},
+    status: {
+      success: { value: "{palette.success.value}" },
+      pending: { value: "{palette.info.value}" },
+      error: { value: "{palette.danger.value}" },
+    },
   },
 };

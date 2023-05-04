@@ -1,10 +1,14 @@
 {
   "name": "gel-design-tokens",
+  "private": true,
   "version": "1.0.0",
   "description": "A POC Design Tokens library inspired by a group of Australian banks",
-  "main": "index.js",
   "scripts": {
-    "build": "node .",
+    "build": "yarn clean && yarn build:style-dictionary && yarn build:viewer",
+    "build:style-dictionary": "node scripts/build-style-dictionary.js",
+    "build:viewer": "yarn workspace token-viewer build",
+    "dev": "yarn workspace token-viewer dev",
+    "clean": "rm -rf build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nathan Simpson",
@@ -14,5 +18,8 @@
   },
   "devDependencies": {
     "prettier": "^2.8.8"
-  }
+  },
+  "workspaces": [
+    "token-viewer"
+  ]
 }

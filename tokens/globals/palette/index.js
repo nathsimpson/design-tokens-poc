@@ -1,3 +1,5 @@
+const { generateTints } = require("../../../utils");
+
 const palette = {
   background: { value: "#F3F4F6", private: true },
   border: { value: "#DEDEE1", private: true },
@@ -19,6 +21,10 @@ const palette = {
   system: { value: "#FF0", private: true },
   // added tokens
   white: { value: "#FFFFFF", private: true },
+
+  tints: {
+    success: generateTints("{palette.success.value}"),
+  },
 };
 
 module.exports = {

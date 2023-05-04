@@ -1,7 +1,12 @@
 module.exports = {
   color: {
     success: {
-      default: { value: "{palette.success.value}" },
+      foreground: { value: "{palette.text.value}" },
+      foregroundBold: { value: "{palette.success.value}" },
+    },
+    danger: {
+      foreground: { value: "{palette.text.value}" },
+      foregroundBold: { value: "{palette.danger.value}" },
     },
   },
 };

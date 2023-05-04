@@ -1,69 +1,90 @@
-import { useState } from "react";
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { getContrastColor } from "hex-a11y";
 
-const inter = Inter({ subsets: ["latin"] });
-
-import { ColorCard } from "../ColorCard";
-
-import wbc from "../tokens/wbc.json";
-import stg from "../tokens/stg.json";
+import wbc from "../tokens/wbc";
+import stg from "../tokens/stg";
+import bom from "../tokens/bom";
+import bsa from "../tokens/bsa";
+import rams from "../tokens/rams";
 
 const themes = { wbc, stg };
 
-function Application() {
-  const [currentThemeName, setCurrentThemeName] =
-    useState<keyof typeof themes>("wbc");
-  const currentTheme = themes[currentThemeName];
-
+const TableCell = ({ color }: { color: string }) => {
   return (
-    <div className={styles.main}>
-      <h1>Tokens</h1>
-      <select
-        value={currentThemeName}
-        onChange={(e) => setCurrentThemeName(e.target.value)}
-      >
-        {Object.keys(themes).map((t) => (
-          <option key={t}>{t}</option>
-        ))}
-      </select>
+    <td
+      style={{
+        backgroundColor: color,
+        paddingTop: "0.5rem",
+        paddingBottom: "0.5rem",
+        paddingLeft: "1rem",
+        paddingRight: "2rem",
+        color: color && getContrastColor(color),
+      }}
+    >
+      {color}
+    </td>
+  );
+};
 
-      <h2>{currentThemeName}</h2>
+type TableRow = {
+  token: string;
+  wbc: string;
+  stg: string;
+  bom: string;
+  bsa: string;
+  rams: string;
+};
 
-      <div>
-        {Object.keys(currentTheme.color)
-          .sort()
-          .map((pack) => (
-            <div>
-              <h2>{pack}</h2>
-              <ul className={styles.tokenlist}>
-                {Object.entries(currentTheme.color[pack]).map(
-                  ([token, value]) => {
-                    // TODO: get css var too
-                    const hex = value.value;
-                    const varName = value.name;
-
-                    return (
-                      <li>
-                        <ColorCard
-                          label={token}
-                          value={hex}
-                          varName={varName}
-                        />
-                      </li>
-                    );
-                  }
-                )}
-              </ul>
-            </div>
+const PackTable = ({
+  pack,
+  tableData,
+}: {
+  pack: string;
+  tableData: TableRow[];
+}) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+      }}
+    >
+      <h2>{pack}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Token</th>
+            <th>wbc</th>
+            <th>stg</th>
+            <th>bom</th>
+            <th>bsa</th>
+            <th>rams</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tableData.map((row) => (
+            <tr key={row.token}>
+              <td style={{ width: "14rem" }}>{row.token}</td>
+              <TableCell color={row.wbc} />
+              <TableCell color={row.stg} />
+              <TableCell color={row.bom} />
+              <TableCell color={row.bsa} />
+              <TableCell color={row.rams} />
+            </tr>
           ))}
-      </div>
+        </tbody>
+      </table>
     </div>
   );
-}
+};
 
 export default function Home() {
+  const packNames = (
+    Object.keys(wbc.color) as (keyof typeof wbc.color)[]
+  ).sort();
+
   return (
     <>
       <Head>
@@ -73,7 +94,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Application />
+      <div className={styles.main}>
+        <div
+          style={{
+            display: "flex",
+            gap: "3rem",
+            flexDirection: "column",
+          }}
+        >
+          <h1>Tokens</h1>
+          {packNames.map((pack) => {
+            const tableData: TableRow[] = [];
+
+            const tokenNames = Object.keys(wbc.color[pack]);
+
+            tokenNames.forEach((token) => {
+              tableData.push({
+                token: token,
+                wbc: wbc.color[pack][token].value,
+                stg: stg.color[pack][token].value,
+                bom: bom.color[pack][token].value,
+                bsa: bsa.color[pack][token].value,
+                rams: rams.color[pack][token].value,
+              });
+            });
+
+            return <PackTable key={pack} pack={pack} tableData={tableData} />;
+          })}
+        </div>
+      </div>
     </>
   );
 }

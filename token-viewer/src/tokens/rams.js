@@ -1,4 +1,9 @@
-{
+/**
+ * Do not edit directly
+ * Generated on Thu, 04 May 2023 06:15:28 GMT
+ */
+
+module.exports = {
   "color": {
     "background": {
       "default": {
@@ -21,7 +26,7 @@
         ]
       },
       "alternate": {
-        "value": "#F5F5F4",
+        "value": "#F3F4F4",
         "filePath": "tokens/globals/color/background.js",
         "isSource": false,
         "original": {
@@ -40,7 +45,7 @@
         ]
       },
       "hero": {
-        "value": "#008739",
+        "value": "#0F446C",
         "filePath": "tokens/globals/color/background.js",
         "isSource": false,
         "original": {
@@ -58,46 +63,46 @@
           "hero"
         ]
       },
-      "infoBold": {
+      "info-strong": {
         "value": "#0074C4",
         "filePath": "tokens/globals/color/background.js",
         "isSource": false,
         "original": {
           "value": "{palette.info.value}"
         },
-        "name": "ColorBackgroundInfoBold",
+        "name": "ColorBackgroundInfoStrong",
         "attributes": {
           "category": "color",
           "type": "background",
-          "item": "infoBold"
+          "item": "info-strong"
         },
         "path": [
           "color",
           "background",
-          "infoBold"
+          "info-strong"
         ]
       },
-      "warningBold": {
+      "warning-strong": {
         "value": "#C53B00",
         "filePath": "tokens/globals/color/background.js",
         "isSource": false,
         "original": {
           "value": "{palette.warning.value}"
         },
-        "name": "ColorBackgroundWarningBold",
+        "name": "ColorBackgroundWarningStrong",
         "attributes": {
           "category": "color",
           "type": "background",
-          "item": "warningBold"
+          "item": "warning-strong"
         },
         "path": [
           "color",
           "background",
-          "warningBold"
+          "warning-strong"
         ]
       },
       "brand": {
-        "value": "#E30000",
+        "value": "#047DBC",
         "filePath": "tokens/globals/color/background.js",
         "isSource": false,
         "original": {
@@ -116,7 +121,7 @@
         ]
       },
       "pop": {
-        "value": "#78BE20",
+        "value": "#78C339",
         "filePath": "tokens/globals/color/background.js",
         "isSource": false,
         "original": {
@@ -137,7 +142,7 @@
     },
     "border": {
       "default": {
-        "value": "#D6D5D0",
+        "value": "#D3D4D5",
         "filePath": "tokens/globals/color/border.js",
         "isSource": false,
         "original": {
@@ -156,7 +161,7 @@
         ]
       },
       "input": {
-        "value": "#949386",
+        "value": "#909396",
         "filePath": "tokens/globals/color/border.js",
         "isSource": false,
         "original": {
@@ -175,7 +180,7 @@
         ]
       },
       "focus": {
-        "value": "#9681AF",
+        "value": "#009CDB",
         "filePath": "tokens/globals/color/border.js",
         "isSource": false,
         "original": {
@@ -196,7 +201,7 @@
     },
     "ungrouped": {
       "light": {
-        "value": "#FAFAF9",
+        "value": "#FAFAFA",
         "filePath": "tokens/globals/color/index.js",
         "isSource": false,
         "original": {
@@ -215,7 +220,7 @@
         ]
       },
       "neutral": {
-        "value": "#727163",
+        "value": "#848588",
         "filePath": "tokens/globals/color/index.js",
         "isSource": false,
         "original": {
@@ -291,7 +296,7 @@
         ]
       },
       "pop": {
-        "value": "#78BE20",
+        "value": "#78C339",
         "filePath": "tokens/globals/color/index.js",
         "isSource": false,
         "original": {
@@ -331,7 +336,7 @@
     },
     "button": {
       "background": {
-        "value": "#E30000",
+        "value": "#047DBC",
         "filePath": "tokens/globals/color/index.js",
         "isSource": false,
         "original": {
@@ -369,7 +374,7 @@
         ]
       },
       "border": {
-        "value": "#E30000",
+        "value": "#047DBC",
         "filePath": "tokens/globals/color/index.js",
         "isSource": false,
         "original": {
@@ -407,13 +412,154 @@
         ]
       }
     },
-    "text": {
-      "default": {
-        "value": "#004833",
-        "filePath": "tokens/globals/color/text.js",
+    "danger": {
+      "foreground": {
+        "value": "#333",
+        "filePath": "tokens/globals/color/success.js",
         "isSource": false,
         "original": {
           "value": "{palette.text.value}"
+        },
+        "name": "ColorDangerForeground",
+        "attributes": {
+          "category": "color",
+          "type": "danger",
+          "item": "foreground"
+        },
+        "path": [
+          "color",
+          "danger",
+          "foreground"
+        ]
+      },
+      "foregroundBold": {
+        "value": "#C40000",
+        "filePath": "tokens/globals/color/success.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.danger.value}"
+        },
+        "name": "ColorDangerForegroundBold",
+        "attributes": {
+          "category": "color",
+          "type": "danger",
+          "item": "foregroundBold"
+        },
+        "path": [
+          "color",
+          "danger",
+          "foregroundBold"
+        ]
+      }
+    },
+    "status": {
+      "success": {
+        "value": "#008000",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.success.value}"
+        },
+        "name": "ColorStatusSuccess",
+        "attributes": {
+          "category": "color",
+          "type": "status",
+          "item": "success"
+        },
+        "path": [
+          "color",
+          "status",
+          "success"
+        ]
+      },
+      "pending": {
+        "value": "#0074C4",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.info.value}"
+        },
+        "name": "ColorStatusPending",
+        "attributes": {
+          "category": "color",
+          "type": "status",
+          "item": "pending"
+        },
+        "path": [
+          "color",
+          "status",
+          "pending"
+        ]
+      },
+      "error": {
+        "value": "#C40000",
+        "filePath": "tokens/globals/color/index.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.danger.value}"
+        },
+        "name": "ColorStatusError",
+        "attributes": {
+          "category": "color",
+          "type": "status",
+          "item": "error"
+        },
+        "path": [
+          "color",
+          "status",
+          "error"
+        ]
+      }
+    },
+    "success": {
+      "foreground": {
+        "value": "#333",
+        "filePath": "tokens/globals/color/success.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.text.value}"
+        },
+        "name": "ColorSuccessForeground",
+        "attributes": {
+          "category": "color",
+          "type": "success",
+          "item": "foreground"
+        },
+        "path": [
+          "color",
+          "success",
+          "foreground"
+        ]
+      },
+      "foregroundBold": {
+        "value": "#008000",
+        "filePath": "tokens/globals/color/success.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.success.value}"
+        },
+        "name": "ColorSuccessForegroundBold",
+        "attributes": {
+          "category": "color",
+          "type": "success",
+          "item": "foregroundBold"
+        },
+        "path": [
+          "color",
+          "success",
+          "foregroundBold"
+        ]
+      }
+    },
+    "text": {
+      "default": {
+        "value": "#333",
+        "comment": "Default body text color",
+        "filePath": "tokens/globals/color/text.js",
+        "isSource": false,
+        "original": {
+          "value": "{palette.text.value}",
+          "comment": "Default body text color"
         },
         "name": "ColorTextDefault",
         "attributes": {
@@ -428,7 +574,7 @@
         ]
       },
       "muted": {
-        "value": "#727163",
+        "value": "#6A6E72",
         "filePath": "tokens/globals/color/text.js",
         "isSource": false,
         "original": {
@@ -447,7 +593,7 @@
         ]
       },
       "heading": {
-        "value": "#004833",
+        "value": "#1972B4",
         "filePath": "tokens/globals/color/text.js",
         "isSource": false,
         "original": {
@@ -466,7 +612,7 @@
         ]
       },
       "link": {
-        "value": "#E30000",
+        "value": "#1972B4",
         "filePath": "tokens/globals/color/text.js",
         "isSource": false,
         "original": {
@@ -795,4 +941,4 @@
       }
     }
   }
-}
+};
