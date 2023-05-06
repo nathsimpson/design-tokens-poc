@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Thu, 04 May 2023 06:59:28 GMT
- */
-
 module.exports = {
   "color": {
     "background": {
